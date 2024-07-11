@@ -45,12 +45,12 @@ do {
         montocompro()
         do {
             valorcien()
-        } while (calcuTeso === "CERRAR SESION")
+        } while (calcuTeso !== "CERRAR SESION")
     } else if (calcuTeso == "2") {
         montocompro()
         do {
             tradein()
-        } while (calcuTeso === "CERRAR SESION")
+        } while (calcuTeso !== "CERRAR SESION")
     } else {
         alert("Ingresá una opción valida por favor")
     }
