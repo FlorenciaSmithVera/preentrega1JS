@@ -1,11 +1,11 @@
-// CALCULADORA VALOR A TRANSFERIR AUTO TOMADO (Compra de auto)
+// CALCULADORA COMPRAVENTA DE AUTOS
 
 alert("Bienvenido a la calculadora de tesorería ARG")
 
 let montocompro = (a, b) => {
     let ofertainicial = parseInt(prompt("Ingresa valor oferta inicial"))
     let descuentosmecanicos = parseInt(prompt("Ingresa valor descuentos mecánicos"))
-    alert("El monto comprobante es ARS " + (ofertainicial - descuentosmecanicos) + "\n\nACORDATE de ingresarlo en la prox pantalla!!")
+    alert("El monto comprobante es ARS " + parseInt((ofertainicial - descuentosmecanicos)) + "\n\nACORDATE de ingresarlo en la prox pantalla!!")
     let montocomprob = parseInt(ofertainicial - descuentosmecanicos)
     return montocomprob
 }
@@ -45,13 +45,13 @@ do {
         montocompro()
         do {
             valorcien()
-        } while (montocompro === "CERRAR SESION")
+        } while (calcuTeso === "CERRAR SESION")
     } else if (calcuTeso == "2") {
         montocompro()
         do {
             tradein()
-        } while (montocompro === "CERRAR SESION")
+        } while (calcuTeso === "CERRAR SESION")
     } else {
         alert("Ingresá una opción valida por favor")
     }
-} while (calcuTeso !== "CERRAR SESION")
+} while (calcuTeso !== "CERRAR SESION")    
